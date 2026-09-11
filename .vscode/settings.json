@@ -1,0 +1,35 @@
+{
+  "editor.inlineSuggest.enabled": false,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.parameterHints.enabled": false,
+  "editor.hover.enabled": "off",
+  "editor.codeActionsOnSave": {},
+  "editor.codeLens": false,
+  "editor.guides.indentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.snippetSuggestions": "none",
+  "editor.trimAutoWhitespace": false,
+  "editor.showUnused": false,
+  "editor.showDeprecated": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.accessibilitySupport": "off",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false
+  },
+  "editor.codeActionsOnSave": {}
+}
