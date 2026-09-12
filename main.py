@@ -5,10 +5,10 @@ exit_price = float(input('Exit price: '))
 
 operations = {
     "ticker": ticker,
-    "quantity": quantity,
     "entry_price": entry_price,
+    "quantity": quantity,
     "exit_price": exit_price
-}
+    }
 
 # volume_operation = [45000, 62000, 58000, 71000]
 
