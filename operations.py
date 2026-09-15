@@ -1,3 +1,4 @@
+from main import calculate_position_value
 operations = [
     {
         "ticker": "BTC",
@@ -78,14 +79,26 @@ def calculate_net_quantity_by_ticker(operations):
 
     return net_quantity
 
+def calculate_total_invested(operations): # just Buys positions
+    total_invested = 0
+    
+    for operation in operations:
+        if operation["side"] == "Buy":
+            position_value = calculate_position_value(
+                operation["entry_price"],
+                operation["quantity"]
+                )
+            total_invested = total_invested + position_value
+            
+    return total_invested
 
 total_operations = calculate_total_operations(operations)
 total_side_operations = calculate_total_side_operations(operations)
 quantity_per_ticker = calculate_quantity_per_ticker(operations)
 total_net_quantitys = calculate_net_quantity_by_ticker(operations)
+total_invested = calculate_total_invested(operations)
 
-print(total_operations)
-print(total_side_operations)
-print(quantity_per_ticker)
-print(total_net_quantitys)
-
+print('Net position:')
+for ticker, quantity in total_net_quantitys.items():
+    print(f'{ticker}: {quantity}')
+print(f'\nTotal invested: {total_invested}')
